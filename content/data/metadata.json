@@ -1,0 +1,21 @@
+{
+  "title": "Reinis Cirpons",
+  "url": "https://reinisc.id.lv/",
+  "language": "en",
+  "description": "My personal webpage. Contains writing about math, computation and an occasional doodle.",
+  "feed": {
+    "subtitle": "My personal webpage. Contains writing about math, computation and an occasional doodle.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://reinisc.id.lv/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://reinisc.id.lv/feed/feed.json"
+  },
+  "author": {
+    "name": "Reinis Cirpons",
+    "email": "rc234@st-andrews.ac.uk",
+    "url": "https://reinisc.id.lv/about/"
+  }
+}

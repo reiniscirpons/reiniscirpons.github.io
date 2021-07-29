@@ -1,8 +1,8 @@
-# Reinis's blog
+# Reinis's personal webpage
 
 Currently available at [reinisc.id.lv](https://reinisc.id.lv/).
 
-A hopefully simple blog. Will likely contain some amount of maths, computation
+A hopefully simple personal webpage + blog. Will likely contain some amount of maths, computation
 and maybe even an occasional drawing.
 
 I plan on implementing a small system that allows me to write blog posts in
