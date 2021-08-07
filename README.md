@@ -26,3 +26,4 @@ At present, the blog is made with a loose amalgam of the following software:
     our main template.
 * [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages/) github
   action for deploying the static website to github pages.
+* [utterances](https://utteranc.es/) for comments on blog posts.
