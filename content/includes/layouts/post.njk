@@ -21,3 +21,13 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
+
+{# For utterances to work. TODO: maybe factor this out in future? #}
+<script src="https://utteranc.es/client.js"
+        repo={{ metadata.github-repo }}
+        issue-term="pathname"
+        label="utterances-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
