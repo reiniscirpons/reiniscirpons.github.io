@@ -1,0 +1,35 @@
+:root {
+    --bg-col: #fff;
+    --txt-col: #000;
+    --accent-col: #fd5;
+    --neutral-col: #555;
+    --contrast-col: #34d;
+    color: var(--txt-col);
+    background-color: var(--bg-col);
+}
+
+body {
+    font-family: monospace;
+    font-size: 12pt;
+    margin: 2em auto;
+    max-width: 80ch;
+    text-align: justify;
+}
+
+header > h1 { font-size: 1em; }
+
+th {
+  text-align: right;
+  vertical-align: top;
+  padding: 0em 1em;
+}
+
+b { background-color: var(--accent-col); }
+
+a { color: var(--contrast-col); }
+a:visited { color: var(--neutral-col); }
+
+a:hover {
+  background-color: var(--contrast-col);
+  color: var(--bg-col);
+}
