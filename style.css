@@ -11,9 +11,10 @@
 body {
     font-family: monospace;
     font-size: 12pt;
-    margin: 2em auto;
+    margin: auto;
     max-width: 80ch;
     text-align: justify;
+    padding: 2em;
 }
 
 header > h1 { font-size: 1em; }
