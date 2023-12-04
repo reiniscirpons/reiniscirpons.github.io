@@ -25,7 +25,7 @@ th {
   padding: 0em 1em;
 }
 
-b { background-color: var(--accent-col); }
+mark { background-color: var(--accent-col); font-weight: bold;}
 
 a { color: var(--contrast-col); }
 a:visited { color: var(--neutral-col); }
