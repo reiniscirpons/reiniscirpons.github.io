@@ -24,6 +24,7 @@ body {
 }
 @media (max-width: 79ch) {
   body {
+    font-size: 1rem;
     text-align: left;
   }
 }
