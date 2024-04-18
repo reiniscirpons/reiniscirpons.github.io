@@ -1,51 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Reinis Cirpons - Software</title>
-  <link href="./favicon.ico" rel="icon"/>
-  <link href="./style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <header>
-    <h1>Reinis Cirpons's homepage</h1>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./cv.pdf">CV</a>
-      <mark><a href="./software.html">Software</a></mark>
-      <a href="./teaching.html">Teaching</a>
-      <a href="./writing.html">Writing</a>
-      <a href="./talks.html">Talks</a>
-    </nav>
-    <hr>
-  </header>
-  <main>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reinis Cirpons - Software</title>
+    <link href="./favicon.ico" rel="icon" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Reinis Cirpons's homepage</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./cv.pdf">CV</a></li>
+          <li>
+            <mark><a href="./software.html">Software</a></mark>
+          </li>
+          <li><a href="./teaching.html">Teaching</a></li>
+          <li><a href="./writing.html">Writing</a></li>
+          <li><a href="./talks.html">Talks</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
       <h2>Software</h2>
 
-      <p>Open source projects I have created:</p>
-      <ul>
-        <li>
+      <h3>Author</h3>
+      <dl>
+        <dt>
           <a href="https://github.com/reiniscirpons/freebandlib">freebandlib</a>
-          - a python library providing reference implementations of novel
+        </dt>
+        <dd>
+          A python library providing reference implementations of novel
           polynomial time algorithms for computing with free bands.
-        </li>
-      </ul>
+        </dd>
+        <dt>
+          <a href="https://github.com/reiniscirpons/tree-sitter-gaptst"
+            >tree-sitter-gaptst</a
+          >
+        </dt>
+        <dd>
+          A
+          <a href="https://tree-sitter.github.io/tree-sitter/">tree-sitter</a>
+          grammar for <a href="https://www.gap-system.org/">GAP-system</a>
+          <a
+            href="https://docs.gap-system.org/doc/ref/chap7_mj.html#X801051CC86594630"
+            >test files</a
+          >.
+        </dd>
+      </dl>
 
-      <p>Open source projects I have contributed to:</p>
-      <ul>
-        <li>
-          <a href="https://github.com/libsemigroups/libsemigroups">libsemigroups</a>
-          - a header only C++ library for computing with finite and
-              finitely presented semigroups;
-        </li>
-        <li>
+      <h3>Contributor</h3>
+      <dl>
+        <dt>
+          <a href="https://github.com/libsemigroups/libsemigroups"
+            >libsemigroups</a
+          >
+        </dt>
+        <dd>
+          A header only C++ library for computing with finite and finitely
+          presented semigroups.
+        </dd>
+        <dt>
           <a href="https://github.com/digraphs/Digraphs">Digraphs</a>
-          - a <a href="https://www.gap-system.org/">GAP</a> 
-          package implementing various algorithms for directed
-          graphs.
-        </li>
-      </ul>
-  </main>
-  <footer><hr></footer>
-</body>
+        </dt>
+        <dd>
+          A <a href="https://www.gap-system.org/">GAP</a>
+          package implementing various algorithms for directed graphs.
+        </dd>
+        <dt>
+          <a href="https://github.com/reiniscirpons/tree-sitter-gap"
+            >tree-sitter-gap</a
+          >
+        </dt>
+        <dd>
+          A
+          <a href="https://tree-sitter.github.io/tree-sitter/">tree-sitter</a>
+          grammar for
+          <a href="https://www.gap-system.org/">GAP-system</a> files.
+        </dd>
+      </dl>
+    </main>
+    <footer>
+      <hr />
+      <small>
+        <a href="https://github.com/reiniscirpons">GitHub</a> | 🄯 2022-2024 R.
+        Cirpons
+      </small>
+    </footer>
+  </body>
 </html>

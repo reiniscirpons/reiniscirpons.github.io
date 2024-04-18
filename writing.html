@@ -1,52 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Reinis Cirpons - Writing</title>
-  <link href="./favicon.ico" rel="icon"/>
-  <link href="./style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <header>
-    <h1>Reinis Cirpons's homepage</h1>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./cv.pdf">CV</a>
-      <a href="./software.html">Software</a>
-      <a href="./teaching.html">Teaching</a>
-      <mark><a href="./writing.html">Writing</a></mark>
-      <a href="./talks.html">Talks</a>
-    </nav>
-    <hr>
-  </header>
-  <main>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reinis Cirpons - Writing</title>
+    <link href="./favicon.ico" rel="icon" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Reinis Cirpons's homepage</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./cv.pdf">CV</a></li>
+          <li><a href="./software.html">Software</a></li>
+          <li><a href="./teaching.html">Teaching</a></li>
+          <li>
+            <mark><a href="./writing.html">Writing</a></mark>
+          </li>
+          <li><a href="./talks.html">Talks</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
       <h2>Writing</h2>
 
       <h3>Publications</h3>
-      <ul>
-        <li>
-          R. Cirpons, J. D. Mitchell,
-          "Polynomial time multiplication and normal forms in free bands"
-          (In: <a href="https://doi.org/10.1016/j.tcs.2023.113783">
-            Theoretical Computer Science</a>, 2023).
-        </li>
-      </ul>
-      <h3>Work in progress</h3>
-      <ul>
-        <li>
-          R. Cirpons, J. D. Mitchell,
-          "The word problem for 1-relation monoids is mostly decidable".
-        </li>
-      </ul>
-      <h3>Unpublished</h3> 
-      <ul>
-        <li>
-          Masters project:
-          "Computing in relatively free bands - An acyclic transducer based approach"
-          (<a href="./writing/computing-in-relatively-free-bands.pdf">pdf</a>).
-        </li>
-      </ul>
-  </main>
-  <footer><hr></footer>
-</body>
+      <dl>
+        <dt>"Polynomial time multiplication and normal forms in free bands"</dt>
+        <dd>
+          <p>With J. D. Mitchell</p>
+          <p>
+            <cite>
+              Theoretical Computer Science
+              <b>953</b>
+              (2023). doi:
+              <a href="https://doi.org/10.1016/j.tcs.2023.113783">
+                10.1016/j.tcs.2023.113783
+              </a>
+            </cite>
+          </p>
+          <details>
+            <summary>Abstract</summary>
+            We present efficient computational solutions to the problems of
+            checking equality, performing multiplication, and computing minimal
+            representatives of elements of free bands. A band is any semigroup
+            satisfying the identity and the free band is the free object in the
+            variety of k-generated bands. Radoszewski and Rytter developed a
+            linear time algorithm for checking whether two words represent the
+            same element of a free band. In this paper we describe an alternate
+            linear time algorithm for the same problem. The algorithm we present
+            utilises a representation of words as synchronous deterministic
+            transducers that lend themselves to efficient (quadratic in the size
+            of the alphabet) multiplication in the free band. This
+            representation also provides a means of finding the short-lex least
+            word representing a given free band element with quadratic
+            complexity. Previous article in issue
+          </details>
+        </dd>
+      </dl>
+
+      <h3>In preparation</h3>
+      <dl>
+        <dt>"Computing the congruences of a finite semigroup or monoid"</dt>
+        <dd>
+          <p>
+            With M. Anagnostopoulou-Merkouri, J. D. Mitchell and M. Tsalakou
+          </p>
+          <p>
+            <cite>
+              Preprint:
+              <a href="https://arxiv.org/abs/2302.06295">arXiv:2302.06295</a>
+            </cite>
+          </p>
+          <details>
+            <summary>Abstract</summary>
+            In this paper we describe an algorithm for computing the left,
+            right, or 2-sided congruences of a finitely presented semigroup or
+            monoid with finitely many classes, and alternative algorithm when
+            the finitely presented semigroup or monoid is finite. We compare the
+            two algorithms presented to existing algorithms and implementations.
+            The first algorithm is a generalization of Sims' low index subgroup
+            algorithm for finding the congruences of a monoid. The second
+            algorithm involves determining the distinct principal congruences,
+            and then finding all of their possible joins. Variations of this
+            algorithm have been suggested in numerous contexts by numerous
+            authors. We show how to utilise the theory of relative Green's
+            relations, and a version of Schreier's Lemma for monoids, to reduce
+            the number of principal congruences that must be generated as the
+            first step of this approach. Both of the algorithms described in
+            this paper are implemented in the
+            <a href="https://www.gap-system.org/">GAP</a>
+            package
+            <a href="https://github.com/semigroups/Semigroups">Semigroups</a>
+            , and the first algorithm is available in the C++ library
+            <a href="https://github.com/libsemigroups/libsemigroups"
+              >libsemigroups</a
+            >
+            and in its python bindings
+            <a href="https://github.com/libsemigroups/libsemigroups_pybind11"
+              >libsemigroups_pybind</a
+            >
+            .
+          </details>
+        </dd>
+      </dl>
+
+      <h3>Unpublished</h3>
+      <dl>
+        <dt>
+          "Computing in relatively free bands - An acyclic transducer based
+          approach"
+        </dt>
+        <dd>
+          Masters project (<a
+            href="./writing/computing-in-relatively-free-bands.pdf"
+            >pdf</a
+          >).
+        </dd>
+      </dl>
+    </main>
+    <footer>
+      <hr />
+      <small>
+        <a href="https://github.com/reiniscirpons">GitHub</a> | 🄯 2022-2024 R.
+        Cirpons
+      </small>
+    </footer>
+  </body>
 </html>
