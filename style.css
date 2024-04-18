@@ -20,13 +20,7 @@ body {
   text-align: justify;
   margin: auto;
   max-width: 80ch;
-  padding: 0 2rem;
-}
-@media (max-width: 79ch) {
-  body {
-    font-size: 1rem;
-    text-align: left;
-  }
+  padding: 2rem;
 }
 header,
 footer {
@@ -58,11 +52,11 @@ header > nav > ul {
 
 /* Organizational tags */
 
-dd > p {
-  margin: 0.25rem 0;
+dd > * {
+  margin: 0.5rem 0;
 }
 dt {
-  margin: 0.5rem 0;
+  margin: 1rem 0 0 0;
 }
 th {
   text-align: right;
@@ -105,4 +99,19 @@ hr {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 80ch) {
+  body {
+    font-size: 1rem;
+    text-align: left;
+  }
+  dd {
+    margin: 0 0 0 1rem;
+  }
+  dd > * {
+    margin: 0.3rem 0;
+  }
 }
