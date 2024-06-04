@@ -1,11 +1,11 @@
 /* Main settings */
 
 :root {
-  --bg-col: #fff;
-  --txt-col: #000;
-  --accent-col: #fd5;
-  --neutral-col: #56e;
-  --contrast-col: #23c;
+  --col-bg: #fff;
+  --col-fg: #000;
+  --col-ac: #fd5;
+  --col-nt: #56e;
+  --col-ct: #23c;
 }
 
 html {
@@ -13,8 +13,8 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: var(--bg-col);
-  color: var(--txt-col);
+  background: var(--col-bg);
+  color: var(--col-fg);
   font-size: 1.3rem;
   font-family: monospace;
   text-align: justify;
@@ -40,57 +40,112 @@ header > h1 {
 
 /* Navigation */
 
-header > nav > ul {
-  list-style-type: none;
-  margin-top: 0.5rem;
-  padding-inline-start: 0;
+footer > * > ul,
+nav > menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   li {
-    display: inline;
-    margin: 0 0.6rem;
+    flex-shrink: 0;
+    margin: 0.3rem 0.6rem;
+    a {
+      text-decoration: none;
+      padding: 0.25rem 0.75rem;
+    }
+    a:visited {
+      color: var(--col-ct);
+    }
+    a:hover {
+      text-decoration: underline;
+      background: none;
+      color: var(--col-ct);
+    }
+    mark {
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--col-fg);
+      a {
+        padding: 0;
+      }
+    }
   }
 }
 
 /* Organizational tags */
 
-dd > * {
-  margin: 0.5rem 0;
+dl {
+  margin: 1.5rem 0 0;
 }
-dt {
-  margin: 1rem 0 0 0;
+dd {
+  margin: 1rem 0;
+  padding: 0 0 0 2.5rem;
+  div {
+    margin: 0.5rem 0;
+  }
+}
+table {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  inline-size: fit-content;
+  overflow-x: auto;
+}
+td,
+th {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--col-fg);
 }
 th {
-  text-align: right;
-  vertical-align: top;
-  padding: 0 0.5rem;
+  background: var(--col-ac);
+  font-weight: 700;
+}
+details {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--col-fg);
+  p {
+    margin: 0;
+  }
 }
 summary {
   cursor: pointer;
-  text-decoration: underline;
-  display: inline list-item;
+  display: list-item;
+  user-select: none;
+}
+details[open] > summary {
+  padding: 1rem;
+  border-bottom: 1px solid var(--col-fg);
+  background: var(--col-ac);
+  margin: -1rem -1rem 1rem;
 }
 
 /* Colors */
 
 mark {
-  background-color: var(--accent-col);
+  background: var(--col-ac);
   font-weight: bold;
 }
 summary,
 a {
-  color: var(--contrast-col);
+  color: var(--col-ct);
 }
 a:visited {
-  color: var(--neutral-col);
+  color: var(--col-nt);
 }
-details[open] > summary,
-summary:hover,
 a:hover {
-  background-color: var(--contrast-col);
-  color: var(--bg-col);
+  background: var(--col-ct);
+  color: var(--col-bg);
+}
+summary:hover {
+  text-decoration: underline;
 }
 hr {
-  background: var(--txt-col);
-  height: 0.1rem;
+  background: var(--col-fg);
+  height: 2px;
   border: 0;
 }
 
@@ -109,9 +164,9 @@ img {
     text-align: left;
   }
   dd {
-    margin: 0 0 0 1rem;
-  }
-  dd > * {
-    margin: 0.3rem 0;
+    padding: 0 0 0 1rem;
+    div {
+      margin: 0.25rem 0;
+    }
   }
 }

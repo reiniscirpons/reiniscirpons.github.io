@@ -10,7 +10,7 @@
     <header>
       <h1>Reinis Cirpons's homepage</h1>
       <nav>
-        <ul>
+        <menu>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./cv.pdf">CV</a></li>
           <li><a href="./software.html">Software</a></li>
@@ -19,7 +19,7 @@
             <mark><a href="./writing.html">Writing</a></mark>
           </li>
           <li><a href="./talks.html">Talks</a></li>
-        </ul>
+        </menu>
       </nav>
       <hr />
     </header>
@@ -36,8 +36,8 @@
       <dl>
         <dt>"Polynomial time multiplication and normal forms in free bands"</dt>
         <dd>
-          <p>With J. D. Mitchell</p>
-          <p>
+          <div>With <a href="https://jdbm.me/">J. D. Mitchell</a></div>
+          <div>
             <cite>
               Theoretical Computer Science
               <b>953</b>
@@ -46,28 +46,30 @@
                 10.1016/j.tcs.2023.113783
               </a>
             </cite>
-          </p>
-          <p>
+          </div>
+          <div>
             Preprint:
             <a href="https://arxiv.org/abs/2209.05334">arXiv:2209.05334</a>
-          </p>
-          <details>
-            <summary>Abstract</summary>
-            We present efficient computational solutions to the problems of
-            checking equality, performing multiplication, and computing minimal
-            representatives of elements of free bands. A band is any semigroup
-            satisfying the identity and the free band is the free object in the
-            variety of k-generated bands. Radoszewski and Rytter developed a
-            linear time algorithm for checking whether two words represent the
-            same element of a free band. In this paper we describe an alternate
-            linear time algorithm for the same problem. The algorithm we present
-            utilises a representation of words as synchronous deterministic
-            transducers that lend themselves to efficient (quadratic in the size
-            of the alphabet) multiplication in the free band. This
-            representation also provides a means of finding the short-lex least
-            word representing a given free band element with quadratic
-            complexity. Previous article in issue
-          </details>
+          </div>
+          <div>
+            <details>
+              <summary>Abstract</summary>
+              We present efficient computational solutions to the problems of
+              checking equality, performing multiplication, and computing
+              minimal representatives of elements of free bands. A band is any
+              semigroup satisfying the identity and the free band is the free
+              object in the variety of k-generated bands. Radoszewski and Rytter
+              developed a linear time algorithm for checking whether two words
+              represent the same element of a free band. In this paper we
+              describe an alternate linear time algorithm for the same problem.
+              The algorithm we present utilises a representation of words as
+              synchronous deterministic transducers that lend themselves to
+              efficient (quadratic in the size of the alphabet) multiplication
+              in the free band. This representation also provides a means of
+              finding the short-lex least word representing a given free band
+              element with quadratic complexity. Previous article in issue
+            </details>
+          </div>
         </dd>
       </dl>
 
@@ -78,43 +80,48 @@
           and monoids"
         </dt>
         <dd>
-          <p>
-            With M. Anagnostopoulou-Merkouri, J. D. Mitchell and M. Tsalakou
-          </p>
-          <p>
+          <div>
+            With
+            <a href="https://marinaanagno.github.io/"
+              >M. Anagnostopoulou-Merkouri</a
+            >, <a href="https://jdbm.me/">J. D. Mitchell</a> and
+            <a href="https://mariatsalakou.github.io/">M. Tsalakou</a>
+          </div>
+          <div>
             Preprint:
             <a href="https://arxiv.org/abs/2302.06295">arXiv:2302.06295</a>
-          </p>
-          <details>
-            <summary>Abstract</summary>
-            In this paper we describe an algorithm for computing the left,
-            right, or 2-sided congruences of a finitely presented semigroup or
-            monoid with finitely many classes, and alternative algorithm when
-            the finitely presented semigroup or monoid is finite. We compare the
-            two algorithms presented to existing algorithms and implementations.
-            The first algorithm is a generalization of Sims' low index subgroup
-            algorithm for finding the congruences of a monoid. The second
-            algorithm involves determining the distinct principal congruences,
-            and then finding all of their possible joins. Variations of this
-            algorithm have been suggested in numerous contexts by numerous
-            authors. We show how to utilise the theory of relative Green's
-            relations, and a version of Schreier's Lemma for monoids, to reduce
-            the number of principal congruences that must be generated as the
-            first step of this approach. Both of the algorithms described in
-            this paper are implemented in the
-            <a href="https://www.gap-system.org/">GAP</a>
-            package
-            <a href="https://github.com/semigroups/Semigroups">Semigroups</a>
-            , and the first algorithm is available in the C++ library
-            <a href="https://github.com/libsemigroups/libsemigroups"
-              >libsemigroups</a
-            >
-            and in its python bindings
-            <a href="https://github.com/libsemigroups/libsemigroups_pybind11"
-              >libsemigroups_pybind</a
-            >
-            .
-          </details>
+          </div>
+          <div>
+            <details>
+              <summary>Abstract</summary>
+              In this paper we describe an algorithm for computing the left,
+              right, or 2-sided congruences of a finitely presented semigroup or
+              monoid with finitely many classes, and alternative algorithm when
+              the finitely presented semigroup or monoid is finite. We compare
+              the two algorithms presented to existing algorithms and
+              implementations. The first algorithm is a generalization of Sims'
+              low index subgroup algorithm for finding the congruences of a
+              monoid. The second algorithm involves determining the distinct
+              principal congruences, and then finding all of their possible
+              joins. Variations of this algorithm have been suggested in
+              numerous contexts by numerous authors. We show how to utilise the
+              theory of relative Green's relations, and a version of Schreier's
+              Lemma for monoids, to reduce the number of principal congruences
+              that must be generated as the first step of this approach. Both of
+              the algorithms described in this paper are implemented in the
+              <a href="https://www.gap-system.org/">GAP</a>
+              package
+              <a href="https://github.com/semigroups/Semigroups">Semigroups</a>
+              , and the first algorithm is available in the C++ library
+              <a href="https://github.com/libsemigroups/libsemigroups"
+                >libsemigroups</a
+              >
+              and in its python bindings
+              <a href="https://github.com/libsemigroups/libsemigroups_pybind11"
+                >libsemigroups_pybind</a
+              >.
+            </details>
+          </div>
         </dd>
       </dl>
 
@@ -125,18 +132,22 @@
           approach"
         </dt>
         <dd>
-          Masters project (<a
-            href="./writing/computing-in-relatively-free-bands.pdf"
-            >pdf</a
-          >).
+          <div>Masters project</div>
+          <div>
+            <a href="./writing/computing-in-relatively-free-bands.pdf"
+              >Download document (PDF, 0.3MB)</a
+            >
+          </div>
         </dd>
       </dl>
     </main>
     <footer>
       <hr />
       <small>
-        <a href="https://github.com/reiniscirpons">GitHub</a> | 🄯 2022-2024 R.
-        Cirpons
+        <ul>
+          <li><a href="https://github.com/reiniscirpons">GitHub</a></li>
+          <li>2022-2024 R. Cirpons</li>
+        </ul>
       </small>
     </footer>
   </body>
