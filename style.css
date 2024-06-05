@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 80%;
   box-sizing: border-box;
 }
 body {
@@ -41,35 +41,28 @@ header > h1 {
 /* Navigation */
 
 footer ul,
-nav > menu {
+nav menu {
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  li {
-    flex-shrink: 0;
-    margin: 0.3rem 0.6rem;
-    a {
-      text-decoration: none;
-      padding: 0.25rem 0.75rem;
-    }
-    a:visited {
-      color: var(--col-ct);
-    }
-    a:hover {
-      text-decoration: underline;
-      background: none;
-      color: var(--col-ct);
-    }
-    mark {
-      padding: 0.25rem 0.75rem;
-      border: 1px solid var(--col-fg);
-      a {
-        padding: 0;
-      }
-    }
-  }
+}
+footer li,
+nav li {
+  flex-shrink: 0;
+  margin: 0.25rem 0.75rem;
+}
+nav a {
+  padding: 0.25rem 0.75rem;
+}
+nav mark {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--col-fg);
+}
+nav mark a {
+  padding: 0;
 }
 
 /* Organizational tags */
@@ -80,9 +73,9 @@ dl {
 dd {
   margin: 1rem 0;
   padding: 0 0 0 2.5rem;
-  div {
-    margin: 0.5rem 0;
-  }
+}
+dd > div {
+  margin: 0.5rem 0;
 }
 table {
   display: block;
@@ -107,9 +100,9 @@ details {
   margin: 0.5rem 0;
   padding: 1rem;
   border: 1px solid var(--col-fg);
-  p {
-    margin: 0;
-  }
+}
+details > * {
+  margin: 0;
 }
 summary {
   cursor: pointer;
@@ -131,14 +124,12 @@ mark {
 }
 summary,
 a {
+  text-decoration: none;
   color: var(--col-ct);
 }
-a:visited {
-  color: var(--col-nt);
-}
 a:hover {
-  background: var(--col-ct);
-  color: var(--col-bg);
+  text-decoration: underline;
+  background: none;
 }
 summary:hover {
   text-decoration: underline;
@@ -167,8 +158,8 @@ img {
   }
   dd {
     padding: 0 0 0 1rem;
-    div {
-      margin: 0.25rem 0;
-    }
+  }
+  dd > div {
+    margin: 0.25rem 0;
   }
 }
