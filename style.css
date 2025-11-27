@@ -8,24 +8,6 @@
   --col-ct: #23c;
 }
 
-@font-face {
-  font-family: TT2020;
-  src: url(fonts/TT2020StyleE-Regular.woff2) format("woff2");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: TT2020;
-  src: url(fonts/TT2020StyleE-Italic.woff2) format("woff2");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: TT2020;
-  src: url(fonts/TT2020StyleB-Regular.woff2) format("woff2");
-  font-weight: bold;
-}
-
 html {
   font-size: 80%;
   box-sizing: border-box;
@@ -33,10 +15,10 @@ html {
 body {
   background: var(--col-bg);
   color: var(--col-fg);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   line-height: 1.4;
   max-width: 80ch;
-  font-family: TT2020, monospace;
+  font-family: monospace;
   text-align: justify;
   hyphens: auto;
   margin: auto;
@@ -130,19 +112,12 @@ details > * {
 summary {
   cursor: pointer;
   display: list-item;
-  user-select: none;
-  list-style-type: "+ ";
 }
 details[open] > summary {
   padding: 1rem;
   border-bottom: 1px solid var(--col-fg);
   background: var(--col-ac);
   margin: -1rem -1rem 1rem;
-  list-style-type: "x ";
-}
-ul,
-ol {
-  list-style-type: "* ";
 }
 
 /* Colors */
